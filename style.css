@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(235, 245, 150);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.main{
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+    transform: translateY(70px);
+    box-shadow: 2px 2px 100px 5px inset;
+}
+h1{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+p{
+    font-size: 1.5rem;
+    font-weight:bold ;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+.buttons{
+    gap: 20px;
+    display: flex;
+}
+button{
+    border: 2px solid black;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+
+#rock{
+    background-color: #ff000054;
+    font-weight: bolder;
+}
+#rock:hover{
+    background-color: #ff0000bb;
+}
+#paper{
+    background-color: #008cff66;
+    font-weight: bolder;
+}
+#paper:hover{
+    background-color: #008cffba;
+}
+#scissor{
+    background-color: #02ff0a48;
+    font-weight: bolder;
+}
+#scissor:hover{
+    background-color: #02ff0ab9;
+    font-weight: bolder;
+}
+#display{
+    font-weight: lighter;
+}
+#score{
+    display: flex;
+    font-weight: lighter;
+    gap: 10px;
+}
+#user-score{
+    font-weight: bold;
+    color: green;
+}
+#com-score{
+    font-weight: bold;
+    color: red;
+}
+
+@media only screen and(max-width=455px){
+     body{
+        font-size: 0.7em;
+     }
+}
